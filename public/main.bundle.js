@@ -146,7 +146,7 @@ module.exports = "<nav class=\"navbar navbar-inverse\">\n  <div class=\"containe
 /***/ 164:
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Need Music ?</h1>\n<p class=\"lead\">Use the ngSpotify app to browse new releases and preview the songs!</p>\n<form>\n  <div class=\"form-group\">\n    <input type=\"text\" name=\"searchStr\" [(ngModel)] = \"searchStr\" (keyup)=\"searchMusic()\" class=\"form-control\" placeholder=\"Type in your favourite artist...\">\n  </div>\n</form>\n\n<div *ngIf=\"searchRes\">\n  <div *ngFor=\"let res of searchRes\">\n    <div class=\"row\">\n      <div class=\"col-md-12\">\n        <div class=\"search-res well\">\n          <h4><a routerLink=\"/artist/{{res.id}}\">{{res.name}}</a></h4>\n          <div>\n            <strong>Genres:</strong>\n            <span *ngFor=\"let genre of res.genres\">{{genre}}</span>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<h1>Need Music ?</h1>\n<p class=\"lead\">Use the Spotify app to browse new releases and preview the songs!</p>\n<form>\n  <div class=\"form-group\">\n    <input type=\"text\" name=\"searchStr\" [(ngModel)] = \"searchStr\" (keyup)=\"searchMusic()\" class=\"form-control\" placeholder=\"Type in your favourite artist...\">\n  </div>\n</form>\n\n<div *ngIf=\"searchRes\">\n  <div *ngFor=\"let res of searchRes\">\n    <div class=\"row\">\n      <div class=\"col-md-12\">\n        <div class=\"search-res well\">\n          <h4><a routerLink=\"/artist/{{res.id}}\">{{res.name}}</a></h4>\n          <div>\n            <strong>Genres:</strong>\n            <span *ngFor=\"let genre of res.genres\">{{genre}}</span>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
